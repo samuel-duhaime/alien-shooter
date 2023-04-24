@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Alien invasion</title>
+  </head>
+  <body>
+    <div id="app" class="app">
+      <!-- Show player lives -->
+      <section class="lives">
+        <div id="live-1" class="live">&#10084;</div>
+        <div id="live-2" class="live">&#10084;</div>
+        <div id="live-3" class="live">&#10084;</div>
+      </section>
+    </div>
+
+    <!-- Game introduction -->
+    <section class="info" id="introduction">
+      <h1>Welcome to Alien invasion!</h1>
+      <div class="containerCommands">
+        <div class="command">
+          <div>Left:</div>
+          <div class="symbol">a or &#8592;</div>
+        </div>
+        <div class="command">
+          <div>Right:</div>
+          <div class="symbol">d or &#8594;</div>
+        </div>
+        <div class="command">
+          <div>Up:</div>
+          <div class="symbol">w or &#8593;</div>
+        </div>
+        <div class="command">
+          <div>Down:</div>
+          <div class="symbol">s or &#8595;</div>
+        </div>
+        <div class="command">
+          <div>Shoot laser:</div>
+          <div class="symbol">space</div>
+        </div>
+        <div>
+          <button class="button" onclick="gameEngine.gameStart()">
+            Start the game
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game over -->
+    <section class="info" id="gameOver" style="display: none">
+      <h2>Game over!</h2>
+      <div class="containerCommands">
+        <button class="button" onclick="gameEngine.gameRestart()">
+          Restart the game
+        </button>
+      </div>
+    </section>
+
+    <script src="js/data.js"></script>
+    <script src="js/sounds.js"></script>
+    <script src="js/Text.js"></script>
+    <script src="js/Enemy.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/engine-utilities.js"></script>
+    <script src="js/Engine.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
