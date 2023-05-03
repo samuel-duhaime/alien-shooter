@@ -1,4 +1,4 @@
-# Alien Shooter | 🎮 Game with JavaScript
+# Alien Shooter | 🎮 Video Game with JavaScript
 
 ## Trailer
 
